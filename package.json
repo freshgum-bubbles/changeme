@@ -1,7 +1,7 @@
 {
-  "name": "changeme",
-  "version": "0.1.0",
+  "name": "@typed-injector/react",
   "private": true,
+  "version": "0.1.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
