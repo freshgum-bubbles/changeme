@@ -1,9 +1,8 @@
-import { ContainerInstance } from "@typed-inject/injector";
-import { defaultContainer } from "@typed-inject/injector/types/container-instance.class";
-import { ContainerTreeVisitor } from "@typed-inject/injector/types/interfaces/tree-visitor.interface";
+import { ContainerInstance, Container } from "@typed-inject/injector";
+import type { ContainerTreeVisitor } from "@typed-inject/injector/types/interfaces/tree-visitor.interface";
 import { useCallback, useEffect, useRef } from "react";
 
-export function useTreeVisitor (visitor: ContainerTreeVisitor, container: ContainerInstance = defaultContainer) {
+export function useTreeVisitor (visitor: ContainerTreeVisitor, container: ContainerInstance = Container) {
     /** Use a ref to avoid unnecessary re-renders of the host component. */
     const isAttachedRef = useRef<boolean>(false);
 
