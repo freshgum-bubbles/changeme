@@ -1,7 +1,9 @@
 {
   "name": "@typed-injector/react",
-  "private": true,
   "version": "0.1.0",
+  "typings": "./types",
+  "module": "./build/index.js",
+  "main": "./build/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -41,6 +43,10 @@
       "last 1 safari version"
     ]
   },
+  "files": [
+    "./types/**/*",
+    "./build/**/*"
+  ],
   "devDependencies": {
     "@testing-library/react-hooks": "^8.0.1"
   }
