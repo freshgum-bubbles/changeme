@@ -1,0 +1,16 @@
+{
+    "extends": "./tsconfig.json",
+    "include": [
+        "./src/index.ts"
+    ],
+    "exclude": [
+        "./src/hooks/**/*.spec.ts"
+    ],
+    "compilerOptions": {
+        "outDir": "./build/",
+        "module": "ES2022",
+        "noEmit": false,
+        "declaration": true,
+        "declarationDir": "./types/"
+    }
+}
