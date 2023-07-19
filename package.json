@@ -1,5 +1,14 @@
 {
   "name": "@typed-injector/react",
+  "private": false,
+  "maintainers": [
+    "freshgum"
+  ],
+  "author": {
+    "name": "freshgum",
+    "email": "freshgum.bubbles@protonmail.com"
+  },
+  "license": "MIT",
   "version": "0.1.0",
   "typings": "./types",
   "module": "./build/index.js",
