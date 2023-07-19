@@ -51,10 +51,6 @@ import { useMemo } from "react";
  */
 export function useContainer (id: ContainerIdentifier, parent: ContainerInstance | null = Container, options?: CreateContainerOptions) {
     return useMemo(() => {
-        if (parent) {
-            return parent.ofChild(id);
-        }
-
         return ContainerInstance.of(id, parent, options);
     }, [id, parent, options]);
 }
